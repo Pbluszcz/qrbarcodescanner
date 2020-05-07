@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity(),ZXingScannerView.ResultHandler {
         if (contents.isNullOrEmpty())
             Toast.makeText(applicationContext, "null", Toast.LENGTH_SHORT).show()
         else
-            Toast.makeText(applicationContext, "not null", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, contents, Toast.LENGTH_LONG).show()
 
         scannerView.resumeCameraPreview(this);
     }
